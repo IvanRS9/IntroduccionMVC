@@ -1,10 +1,113 @@
-﻿
-@{
+﻿@{
     ViewData["Title"] = "Academy";
 }
 
-<h1>Academy</h1>
+<style>
+    body {
+        background-color: #2C3E50;
+        color: #E8F3F4;
+    }
 
-@Html.ActionLink("Regresar", "Index")
+    h1, h2, h3, h4, p, li {
+        color: #E8F3F4 !important;
+    }
 
+    .btn-custom {
+        background-color: #3498DB;
+        border-color: #2980B9;
+        color: #E8F3F4;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
 
+        .btn-custom:hover {
+            background-color: #2980B9;
+            transform: scale(1.1);
+        }
+
+    .card {
+        background-color: #34495E;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        margin-bottom: 20px;
+    }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+    .card-header, .card-footer {
+        background-color: #2C3E50;
+        border: none;
+    }
+
+    .text-white {
+        color: #E8F3F4 !important;
+    }
+</style>
+
+<div class="text-center my-4">
+    @Html.ActionLink("Regresar", "Index", null, new { @class = "btn btn-custom mx-2" })
+</div>
+
+<h1 class="text-center mt-3">Formación Académica</h1>
+
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center text-white">Técnico Superior Universitario (TSU)</h3>
+                </div>
+                <div class="card-body">
+                    <h5 class="text-white">Institución: Universidad Tecnológica de León</h5>
+                    <p class="text-white">Periodo: 2019 - 2021</p>
+                    <p class="text-white">
+                        Concluí mis estudios en la Universidad Tecnológica de León, obteniendo el título de
+                        Técnico Superior Universitario en Desarrollo de Software Multiplataforma.
+                        Durante mi formación, adquirí conocimientos sólidos en:
+
+                        <ul>
+                            <li>Programación en múltiples lenguajes (Java, JavaScript)</li>
+                            <li>Desarrollo de aplicaciones web y móviles</li>
+                            <li>Gestión de bases de datos (SQL y NOSQL)</li>
+                            <li>Metodologías ágiles (Scrum)</li>
+                        </ul>
+
+                        Participé en varios proyectos, incluyendo el desarrollo de una aplicación móvil
+                        para la gestión de inventarios y un sistema web para el seguimiento de pedidos
+                        en tiempo real. Estos proyectos me permitieron aplicar los conocimientos teóricos
+                        en escenarios prácticos, mejorando mis habilidades técnicas y de resolución de problemas.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center text-white">Ingeniería (ING)</h3>
+                </div>
+                <div class="card-body">
+                    <h5 class="text-white">Institución: Universidad Tecnológica de León</h5>
+                    <p class="text-white">Periodo: 2023 - Presente</p>
+                    <p class="text-white">
+                        Actualmente me encuentro cursando mi ingenieria en la Universidad Tecnologica de Leon, con el fin
+                        de obtener el titulo de Ingeniero en Desarrollo y Gestion de Software, en donde estoy adquiriendo
+                        y reforzando conocimientos en:
+
+                        <ul>
+                            <li>Creación de sistemas automatizando procesos productivos.</li>
+                            <li>Consumo y creación de API's en diversos lenguajes de programación.</li>
+                            <li>Programación en multiples lenguajes (Python, C#, Flutter, TypeScript).</li>
+                            <li>Gestión y analisis de bases de datos.</li>
+                            <li>Dirección y gestión de proyectos</li>
+                            <li>Desarrollo de aplicaciónes Web, móviles y escritorio.</li>
+                            <li>Creación de videojuegos</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

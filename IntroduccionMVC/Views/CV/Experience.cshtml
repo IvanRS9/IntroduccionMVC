@@ -3,8 +3,95 @@
     ViewData["Title"] = "Experience";
 }
 
-<h1>Experience</h1>
+<style>
+    body {
+        background-color: #2C3E50;
+        color: #E8F3F4;
+    }
 
-@Html.ActionLink("Regresar", "Index")
-@Html.ActionLink("Formación academica", "Academy")
+    h1, h2, h3, h4, p, li {
+        color: #E8F3F4 !important;
+    }
 
+    .btn-custom {
+        background-color: #3498DB;
+        border-color: #2980B9;
+        color: #E8F3F4;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+        .btn-custom:hover {
+            background-color: #2980B9;
+            transform: scale(1.1);
+        }
+
+    .card {
+        background-color: #34495E;
+        border: none;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+        margin-bottom: 20px;
+    }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+    .card-header, .card-footer {
+        background-color: #2C3E50;
+        border: none;
+    }
+
+    .text-white {
+        color: #E8F3F4 !important;
+    }
+</style>
+
+<div class="text-center my-4">
+    @Html.ActionLink("Regresar", "Index", null, new { @class = "btn btn-custom mx-2" })
+    @Html.ActionLink("Formación académica", "Academy", null, new { @class = "btn btn-custom mx-2" })
+</div>
+
+<h1 class="text-center mt-3">Experiencia Laboral</h1>
+
+<div class="container-fluid mt-5">
+    <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center text-white">Empresa 1</h3>
+                </div>
+                <div class="card-body">
+                    <h5 class="text-white">Cargo: Desarrollador Web</h5>
+                    <p class="text-white">Duración: Enero 2022 - Presente</p>
+                    <p class="text-white">Descripción: Descripción breve de las responsabilidades y logros en este puesto.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center text-white">Empresa 2</h3>
+                </div>
+                <div class="card-body">
+                    <h5 class="text-white">Cargo: Ingeniero de Software</h5>
+                    <p class="text-white">Duración: Junio 2020 - Diciembre 2021</p>
+                    <p class="text-white">Descripción: Descripción breve de las responsabilidades y logros en este puesto.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-header">
+                    <h3 class="text-center text-white">Empresa 3</h3>
+                </div>
+                <div class="card-body">
+                    <h5 class="text-white">Cargo: Analista de Sistemas</h5>
+                    <p class="text-white">Duración: Enero 2018 - Mayo 2020</p>
+                    <p class="text-white">Descripción: Descripción breve de las responsabilidades y logros en este puesto.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

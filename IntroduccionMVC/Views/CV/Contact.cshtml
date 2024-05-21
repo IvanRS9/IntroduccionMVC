@@ -65,11 +65,49 @@
             .social-icons i:hover {
                 color: #3498DB;
             }
+
+    .btn-custom {
+        background-color: #3498DB;
+        border: none;
+        color: #E8F3F4;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+        border-radius: 25px;
+        display: inline-block;
+        text-decoration: none;
+    }
+
+        .btn-custom:hover {
+            background-color: #2980B9;
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .btn-custom:focus {
+            outline: none;
+        }
+
+    .text-center {
+        text-align: center;
+    }
+
+    .my-4 {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .mx-2 {
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+    }
 </style>
 
 <div class="text-center my-4">
-    @Html.ActionLink("Regresar", "Index", null, new { @class = "btn btn-custom mx-2" })
-    @Html.ActionLink("Experiencia", "Experience", null, new { @class = "btn btn-custom mx-2" })
+    @Html.ActionLink("Regresar", "Index")
+    @Html.ActionLink("Experiencia", "Experience")
 </div>
 
 <h1 class="text-center mt-3">Información de contacto</h1>
@@ -89,18 +127,18 @@
                     <h3 class="text-center text-white">Datos personales</h3>
                 </div>
                 <div class="card-body">
-                    <ul>
-                        <li><p>CHRISTOPER CARLOS IVAN RAMIREZ SANCHEZ</p></li>
-                        <li><p>4772259672</p></li>
-                        <li><p>cciramirez@outlook.com</p></li>
-                        <li><p>León Guanajuato</p></li>
-                        <li><p>México</p></li>
+                    <ul style="list-style: none">
+                        <li><p><i class="fa-solid fa-angles-right text-white"></i>&nbsp;CHRISTOPER CARLOS IVAN RAMIREZ SANCHEZ</p></li>
+                        <li><p><i class="fa-solid fa-angles-right text-white"></i>&nbsp;4772259672</p></li>
+                        <li><p><i class="fa-solid fa-angles-right text-white"></i>&nbsp;cciramirez@outlook.com</p></li>
+                        <li><p><i class="fa-solid fa-angles-right text-white"></i>&nbsp;León Guanajuato</p></li>
+                        <li><p><i class="fa-solid fa-angles-right text-white"></i>&nbsp;México</p></li>
                     </ul>
                 </div>
                 <div class="card-footer">
                     <ul class="social-icons">
-                        <li><span><i class="fa-brands fa-linkedin"></i></span></li>
-                        <li><span><i class="fa-brands fa-github"></i></span></li>
+                        <li><span><a target="_blank" style="text-decoration: none;color: #fff;" href="#"><i class="fa-brands fa-linkedin fs-3"></i></a></span></li>
+                        <li><span><a target="_blank" style="text-decoration: none;color: #fff;" href="https://github.com/IvanRS9"><i class="fa-brands fa-github fs-3"></i></a></span></li>
                     </ul>
                 </div>
             </div>
